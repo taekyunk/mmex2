@@ -1,16 +1,20 @@
 Package: mmex2
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Reads From MoneyManagerEx
 Version: 0.1.0
 Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
+    person("Taekyun (TK)", "Kim", , "taekyunk@gmail.com", role = c("aut", "cre"))
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: This will read MMEX DB above 1.6.2 or above.
+    The updated version allows multi-level categories.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr,
+    janitor,
+    lubridate,
+    RSQLite,
+    stringr,
+    tibble
+RoxygenNote: 7.3.2
