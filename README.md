@@ -4,6 +4,7 @@
 # mmex2
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of mmex is to make it easy to read information from Money
@@ -11,10 +12,10 @@ Manager EX (MMEX) database. MMEX is an excellent open source personal
 finance manager and you can find and download from
 [here](https://www.moneymanagerex.org/)
 
-For instance, MMEX has the following benefits
+For instance, MMEX has the following benefits:
 
 - It is freeware and open source
-- It is available in multiple platform (e.g. PC and Android).
+- It is available on multiple platform (e.g. PC, Linux, and Android).
 - The database is in SQLite format
 
 This package is built for my personal use to create reports of my
@@ -37,9 +38,11 @@ table relationship described
 ## Note
 
 - Only supports 1.6.2 or above
-- Since that the category structure is updated to be more flexible
+  - Note that the category structure is updated to be more flexible
 - With older versions of MMEX, use this package instead [GitHub -
   taekyunk/mmex](https://github.com/taekyunk/mmex)
+- Also, assume only two levels of category are used
+  - Personally, I don’t see much use for deeply nested categories
 
 ## Author
 
