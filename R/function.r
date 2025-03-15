@@ -168,7 +168,7 @@ build_df <- function(db_path){
     # combine
     df <-
         df_tran |>
-        dplyr::mutate(transdate = lubridate::ymd(transdate)) |>
+        dplyr::mutate(transdate = lubridate::ymd_hms(transdate) |> lubridate::as_date()) |>
         dplyr::left_join(df_account1, by = "accountid") |>
         dplyr::left_join(df_account_name, by = 'toaccountid') |>
         dplyr::left_join(df_payee |> dplyr::select(payeeid, payeename), by = "payeeid") |>
